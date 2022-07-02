@@ -6,34 +6,33 @@
  */
 int main(void)
 {
-	int c;
-	int d;
-	int e;
-	int f = 0;
+	int c, d, e, f, op1, op2;
 
-	while (f < 10)
+	c = d = e = f = 48;
+	while (f < 58)
 	{
-		e = 0;
-		while (e < 10)
+		e = 48;
+		while (e < 58)
 		{
-			d = 0;
-			while (d < 10)
+			d = 48;
+			while (d < 58)
 			{
-				c = 0;
-				while (c < 10)
+				c = 48;
+				while (c < 58)
 				{
-					if (!(f == c && e == d))
+					op1 = (f * 10) + e;
+					op2 = (d * 10) + c;
+					if (op1 < op2)
 					{
-						putchar('0' + f);
-						putchar('0' + e);
+						putchar(f);
+						putchar(e);
 						putchar(' ');
-						putchar('0' + d);
-						putchar('0' + c);
-						if (!(f + e == 18 && c + d == 17 && d == 9))
-						{
-							putchar(',');
-							putchar(' ');
-						}
+						putchar(d);
+						putchar(c);
+						if (f == 57 && e == 56 && d == 57 && c == 57)
+							break;
+						putchar(',');
+						putchar(' ');
 					}
 					c++;
 				}
