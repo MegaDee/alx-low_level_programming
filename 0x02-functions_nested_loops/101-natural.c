@@ -21,6 +21,6 @@ int main(void)
 		super++;
 	}
 		printf("%d", lobal);
-		print("\n");
+		printf("\n");
 		return (0);
 }
