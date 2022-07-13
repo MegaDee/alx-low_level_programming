@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <math.h>
 
 /**
  * main - prinnt prim numbers
@@ -20,6 +19,6 @@ int main(void)
 			p--;
 		}
 	}
-	printf("%ld\n", p)
+	printf("%ld\n", p);
 		return (0);
 }
