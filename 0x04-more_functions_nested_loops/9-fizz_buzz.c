@@ -23,7 +23,7 @@ int main(void)
 			printf("%s ", f);
 		else if (i % 5 == 0)
 			printf("%s ", b);
-		else 
+		else
 			printf("%d ", i);
 	}
 	printf("\n");
