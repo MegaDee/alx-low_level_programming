@@ -29,12 +29,12 @@ int main(void)
 	{
 		carry = (m + n) / 1000;
 		o = (m + n) - carry * 1000;
-		k = (i = j) + carry;
+		k = (i + j) + carry;
 		m = n;
 		n = o;
 		i = j;
 		j = k;
-		if (o >= 1000)
+		if (o >= 100)
 			printf("%lu%lu", k, o);
 		else
 			printf("%lu0%lu", k, o);
