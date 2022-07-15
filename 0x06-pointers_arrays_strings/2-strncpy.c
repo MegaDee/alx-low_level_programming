@@ -3,7 +3,7 @@
 /**
  * *_strncpy - find the length of a string
  * @dest: pointer to the string
- * @s: pointer
+ * @src: pointer
  * @n: int
  * Return: destination
  */
