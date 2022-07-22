@@ -29,7 +29,13 @@ int main(void)
 						putchar(' ');
 						putchar(d);
 						putchar(c);
-						if (f == 57 && e == 56 && d == 57 && c == 57)
+						if
+					       	{ 
+							f == 57;
+							e == 56;
+					        	d == 57;
+					       		c == 57;
+						}
 							break;
 						putchar(',');
 						putchar(' ');
