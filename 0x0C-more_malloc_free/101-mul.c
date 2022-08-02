@@ -19,14 +19,12 @@ void _is_zero(char *argv[])
 			isn1 = 0;
 			break;
 		}
-
 	for (i = 0; argv[2][i]; i++)
 		if (argv[2][i] != '0')
 		{
 			isn2 = 0;
 			break;
 		}
-
 	if (isn1 == 1 || isn2 == 1)
 	{
 		printf("0\n");
@@ -41,6 +39,7 @@ void _is_zero(char *argv[])
  *
  * Return: pointer of a char array.
  */
+
 char *_initialize_array(char *ar, int lar)
 {
 	int i = 0;
@@ -59,6 +58,7 @@ char *_initialize_array(char *ar, int lar)
  *
  * Return: length of the number.
  */
+
 int _checknum(char *argv[], int n)
 {
 	int ln;
@@ -81,6 +81,7 @@ int _checknum(char *argv[], int n)
  *
  * Return: 0 - success.
  */
+
 int main(int argc, char *argv[])
 {
 	int ln1, ln2, lnout, add, addl, i, j, k, ca;
